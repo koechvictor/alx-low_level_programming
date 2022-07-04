@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-nums;
-nums1;
+int nums;
+int nums1;
 
 for (nums = '0'; nums <= '9'; nums++)
 {
