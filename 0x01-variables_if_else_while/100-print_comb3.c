@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -11,7 +11,7 @@ int nums1;
 
 for (nums = '0'; nums <= '9'; nums++)
 {
-for (nums1 = '0'; nums1 <= '9'; nums++)
+for (nums1 = '0'; nums1 <= '9'; nums1++)
 {
 putchar(nums);
 putchar(nums1);
