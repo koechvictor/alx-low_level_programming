@@ -1,9 +1,8 @@
 
-#include "main.h"
+#include "_putchar"
 
 /**
- * main -Entry - point 
- *
+ * main - print _putchar 
  * Return: 0 if successful
  */
 int main(void)
