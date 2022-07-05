@@ -1,9 +1,13 @@
 #include "main.h"
+
 /**
- *_purchar(char c) - prints "_putchar"
- **
- * Return: Always 0 (Success)
+ * main - prints Putchar
+ *
+ * Description: prints _putchar
+ * 
+ * Return: 0 (Success)
  */
+
 int main(void)
 {
 	_putchar('_');
