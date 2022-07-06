@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - print_alphabet_x10
- * Description: prints out the alphabet
+ * print_alphabet_x10 - prints out the alphabet
+ * main - uses built in function
  * Return: 0 (success)
  */
 void print_alphabet_x10(void)
