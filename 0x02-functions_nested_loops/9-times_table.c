@@ -23,15 +23,15 @@ void times_table(void)
 	_putchar(z + '0');
 	_putchar(k + '0');
 
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(z + '0');
+			}
+		}
+		_putchar('\n');
 	}
-	else
-	{
-	_putchar(',');
-	_putchar(' ');
-	_putchar(' ');
-	_putchar(z + '0');
-	}
-	}
-	_putchar('\n');
-}
 }
