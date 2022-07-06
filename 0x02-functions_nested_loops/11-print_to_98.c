@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stidio.h>
 
 /**
  * print_to_98 - count to 98
@@ -23,6 +22,7 @@ printf("\n");
 else if (n < 98)
 {
 for (; n <= 98; n++)
+{
 printf("%d", n);
 if (n != 98)
 printf(", ");
