@@ -3,7 +3,7 @@
 /**
  * _islower - checks if input is lowercase
  * @c: variable to determine if input is lowercase
- * main - uses built in function  
+ * main - uses built in function
  * Return: 0 if successful
  */
 
@@ -16,5 +16,6 @@ int _islower(int c)
 	{
 	i = 1;
 	}
+
 	return (i);
 }
