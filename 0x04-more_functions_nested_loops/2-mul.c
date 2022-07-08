@@ -1,15 +1,13 @@
 #include "main.h"
 
 /**
- * print_numbers - print all numbers 0 through 9 and then new line
+ * mul - multiply two intergers
+ *@a: interger 1 to be multiplied
+ *@b: interger 2 to be multiplied
+ *Return: value of the two multiplied intergers
  */
 
-void print_numbers(void)
+int mul(int a, int b)
 {
-	int i;
-	for (i = '0'; i <= '9'; i++)
-	_putchar(i);
-	_putchar('\n');
-
-	return (0);
+	return (a*b);
 }
