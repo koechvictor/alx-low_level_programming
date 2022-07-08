@@ -2,6 +2,8 @@
 
 /**
  * print_most_numbers - print all numbers 0 through 9 but no 2&4 and then \n
+ *
+ *  Return: nothing 
  */
 
 void print_most_numbers(void)
