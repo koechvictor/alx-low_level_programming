@@ -5,7 +5,7 @@
  * @a: variable 1 to be to be printed.
  * @n: variable 2 to be printed.
  */
-void print_array(int *a, int n);
+void print_array(int *a, int n)
 {
 	int one;
 
