@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strncpy - function that copies a string.
- * @dest: first string to copy
- * @src: second string to copy
+ * _strncpy - copy two strings only taking n bytes from src.
+ * @dest: first string to be added to
+ * @src: second string to be added
  * @n: number of bites to use from src
  * Return: concatenated string
  */
