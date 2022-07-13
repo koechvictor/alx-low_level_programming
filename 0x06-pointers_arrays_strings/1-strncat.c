@@ -5,6 +5,7 @@
  * @dest: first string to concatenate
  * @src: second string to concatenate
  * @n: number of bites to use from src
+ * Return: concatenated string
  */
 
 char *_strncat(char *dest, char *src, int n)
