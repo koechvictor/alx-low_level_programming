@@ -18,7 +18,7 @@ char *_strncpy(char *dest, char *src, int n)
 		luck++;
 	}
 	for (;n != 0 && *src != '\0'; n--, luck++)
-	luck = '\0';
+	*luck = '\0';
 
 	return (dest);
 }
