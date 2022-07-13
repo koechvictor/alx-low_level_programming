@@ -1,22 +1,24 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates two strings.
+ * _strncat - concatenates two strings.
  * @dest: first string to concatenate
  * @src: second string to concatenate
- * Return: concatenated string
+ * @n: number of bites to use from src
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	char *luck = dest;
 
 	for (; *luck != '\0'; luck++)
+
 		for (; *src != '\0'; src++)
-		{
+		{if (n == 0)
+			break;
 			*luck = *src;
 			luck++;
+			n--;
 		}
-	*luck = *src;
 	return (dest);
 }
