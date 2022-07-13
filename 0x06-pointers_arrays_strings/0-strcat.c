@@ -12,6 +12,7 @@ char *_strcat(char *dest, char *src)
 	char *luck = dest;
 
 	for (; *luck != '\0'; luck++)
+		;
 		for (; *src != '\0'; src++)
 		{
 			*luck = *src;
