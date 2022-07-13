@@ -12,12 +12,13 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	char *luck = dest;
 
-	for (;n != 0 && *src != 0; n--, src++)
+	for (;n != 0 && *src != '\0'; n--, src++)
 	{
 		*luck = *src;
 		luck++;
 	}
 	for (;n != 0 && *src != '\0'; n--, luck++)
 	luck = '\0';
+
 	return (dest);
 }
