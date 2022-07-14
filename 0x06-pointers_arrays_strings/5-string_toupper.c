@@ -2,14 +2,15 @@
 
 /**
  * string_toupper - changes lowercase letters to uppercase
+ * @a: string in lowercase
  * Return: uppercase letters
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *a)
 {
-	int i = 0;
+	int i;
 
-	for (*(a+i) != '\0'; i++)
+	for (i = 0; *(a+i) != '\0'; i++)
 	{
 		if (*(a + i) >= 'a' && *(a + i) <= 'z')
 			*(a + i) -= 32;
