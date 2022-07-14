@@ -10,15 +10,14 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *luck = dest;
-
-	for (;n != '\0' && *src != '\0'; n--, src++)
+	char *temp = dest;
+	
+	for (; n != 0 && *src != '\0'; n--, src++)
 	{
-		*luck = *src;
-		luck++;
+		*temp = *src;
+		temp++;
 	}
-	for (;n != '\0' && *src != '\0'; n--, luck++)
-	*luck = '\0';
-
+	for (; n != 0 && *temp != '\0'; n--, temp++)
+		*temp = '\0';
 	return (dest);
 }
