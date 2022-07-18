@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _memcpy - copies memory area.
- * @dest: memory area
+ * _memcpy - fills memory with a constant byte.
+ * @dest: start point of string to change
  * @src: memory area
- * @n: number of bytes to copy
- * Returns: dest
+ * @n: number of bytes to change
+ * Return: changed pointer
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
