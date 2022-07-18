@@ -18,7 +18,7 @@ char *_strstr(char *haystack, char *needle)
 		do {
 			s1++;
 			for (count = 0; count < len; count++)
-				if (*(s1 + count) != *(needle + count)
+				if (*(s1 + count) != *(needle + count))
 					break;
 		if (count == len)
 			return (s1);
