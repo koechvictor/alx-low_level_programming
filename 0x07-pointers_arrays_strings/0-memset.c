@@ -2,9 +2,10 @@
 
 /**
  * _memset - fills memory with a constant byte.
- * @s: memory area
+ * @s: start point of string to change
  * @n: number of bytes to change
- * @b: constant
+ * @b: value that will replace
+ * Return: changed pointer
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
