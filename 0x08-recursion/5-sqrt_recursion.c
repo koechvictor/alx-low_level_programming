@@ -4,22 +4,22 @@
  * help - helps sqrt function find sqrt
  * @n: needs to be sqrt
  * @x: sqrt of n
- * Return:nutural sqrt of n
+ * Return: natural sqrt of n
  */
 
 int help(int n, int x)
 {
 	if (x * x == n)
 		return (x);
-	else if  (x * x < n)
-		return (help(n, x++));
+	else if (x * x < n)
+		return (help(n, ++x));
 	return (-1);
 }
 
 /**
- * _sqrt_recursion - returns the natural square root of a number.
+ * _sqrt_recursion - get the natural sqrt of n
  * @n: integer
- * Return: nutural sqrt
+ * Return: natural sqrt of n
  */
 
 int _sqrt_recursion(int n)
