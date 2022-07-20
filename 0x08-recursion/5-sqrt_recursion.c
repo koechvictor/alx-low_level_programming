@@ -13,6 +13,7 @@ int help(int n, int x)
 		return (x);
 	else if  (x * x < n)
 		return (help(n, x++));
+	return (-1);
 }
 
 /**
