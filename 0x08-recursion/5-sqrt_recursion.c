@@ -2,12 +2,12 @@
 
 /**
  * help - helps sqrt function find sqrt
- * @y: needs to be sqrt
+ * @n: needs to be sqrt
  * @x: sqrt of n
  * Return:nutural sqrt of n
  */
 
-int help(int y, int x)
+int help(int n, int x)
 {
 	if (x * x == n)
 		return (x);
