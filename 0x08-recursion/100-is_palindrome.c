@@ -34,7 +34,7 @@ int check_pali(char *f, char *r, int len)
 }
 /**
  * is_palindrome - checks if a string is a palindrome
- * @s: pointer to a string
+ * @s: pointer  to a string
  * Return: return 0 if its not palindrome return 1 if it is
  */
 int is_palindrome(char *s)
