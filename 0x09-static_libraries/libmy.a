@@ -1,18 +1,12 @@
-0-strcat.o
-1-isdigit.o
-1-memcpy.o
-1-strncat.o
-100-atoi.o
-2-strchr.o
-2-strlen.o
-2-strncpy.o
-3-islower.o
-3-puts.o
-3-strcmp.o
-3-strspn.o
-4-isalpha.o
-4-strpbrk.o
-5-strstr.o
-6-abs.o
-9-strcpy.o
-_putchar.o
+!<arch>
+100-atoi.o/     0           0     0     644     0         `
+3-islower.o/    0           0     0     644     0         `
+3-puts.o/       0           0     0     644     0         `
+3-strcmp.o/     0           0     0     644     0         `
+3-strspn.o/     0           0     0     644     0         `
+4-isalpha.o/    0           0     0     644     0         `
+4-strpbrk.o/    0           0     0     644     0         `
+5-strstr.o/     0           0     0     644     0         `
+6-abs.o/        0           0     0     644     0         `
+9-strcpy.o/     0           0     0     644     0         `
+_putchar.o/     0           0     0     644     0         `
