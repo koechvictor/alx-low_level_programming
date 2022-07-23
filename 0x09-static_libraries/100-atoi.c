@@ -1,43 +1,35 @@
 #include "main.h"
-
 /**
- * _atoi - converts a string to an integer
- * @s: string to be converted
- * Return: integers in a string
- */
-
+ * _atoi - Convert a string to integer.
+ * @s: char array string
+ * Description: Number in the string can be preceded by an infinite
+ * You need to take into account all - or + signs before the number.
+ * If there are no numbers in the string, return 0.
+ * Not allowed to hard-code special values.
+ * Return: first integer found in string
+*/
 int _atoi(char *s)
 {
-	int num, len, numcount, mult, x, neg;
+	int i;
+	int h, p;
 
-	len = 0;
-	x = 0;
-	numcount = 0;
-	mult = 1;
-	neg = 1;
-	num = 0;
-
-	while (s[len] != '\0')
+	h = 0;
+	p = -1;
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[len] >= '0' && s[len] <= '9')
+		if (s[i] == '-')
+			p *= -1;
+		if (s[i] > 47 && s[i] < 58)
 		{
-			numcount++;
-			if (!(s[len + 1] >= '0' && s[len + 1] <= '9'))
+			if (h < 0)
+				h = (h * 10) - (s[i] - '0');
+			else
+				h = (s[i] - '0') * -1;
+			if (s[i + 1] < 48 || s[i + 1] > 57)
 				break;
 		}
-		len++;
 	}
-	for (; numcount > 1; numcount--)
-		mult *= 10;
-	for (; x <= len; x++)
-	{
-		if (s[x] == '-')
-			neg *= -1;
-		else if (s[x] <= '9' && s[x] >= '0')
-		{
-			num += (s[x] - '0') * mult * neg;
-			mult /= 10;
-		}
-	}
-	return (num);
+	if (p < 0)
+		h *= -1;
+	return (h);
 }
