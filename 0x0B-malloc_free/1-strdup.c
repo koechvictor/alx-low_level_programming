@@ -1,11 +1,10 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * _strdup - returns a pointer to a newly allocated space in memory
+ * _strdup -  returns a pointer to a newly allocated space in memory
  * @str: string
- * Return: pointer to the two strings concatenated
+ * Return: returns a pointer to the copy
  */
 
 char *_strdup(char *str)
@@ -19,14 +18,13 @@ char *_strdup(char *str)
 	for (len = 0; str[len]; len++)
 		;
 	len++;
-
 	ptr = malloc(len * sizeof(char));
 
-	if (!str)
+		if (!ptr)
 		return (NULL);
 
-	for (x = 0; x >= len; x++)
-		ptr[x] = str[len];
+		for (x = 0; x < len; x++)
+		ptr[x] = str[x];
 
-	return (ptr);
+		return (ptr);
 }
