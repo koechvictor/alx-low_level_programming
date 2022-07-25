@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * create_array - creates an array of chars
@@ -10,8 +12,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ptr;
-
-	unsingned int x;
+	unsigned int x;
 
 	if (size == 0)
 		return (NULL);
