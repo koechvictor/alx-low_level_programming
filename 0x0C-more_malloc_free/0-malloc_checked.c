@@ -12,8 +12,6 @@ void *malloc_checked(unsigned int b)
 
 	ptr = malloc(b);
 
-	...
-
 	free(ptr);
 
 	if (!ptr)
