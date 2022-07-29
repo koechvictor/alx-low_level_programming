@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -14,9 +15,6 @@ void *malloc_checked(unsigned int b)
 
 	if (!ptr)
 		exit(98);
-
-	free(ptr);
-	ptr = NULL;
 
 	return (ptr);
 }
