@@ -48,4 +48,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 	ptr->age = age;
 
 	return (ptr);
-}2
+}
