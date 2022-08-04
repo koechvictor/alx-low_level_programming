@@ -1,26 +1,26 @@
 #include <stdarg.h>
-#include <stdio.h>
 
 /**
- * print_numbers - prints numbers, followed by a new line
- * @separator: string to be printed between numbers
+ * sum_them_all - sum of all its parameters
  * @n: number of parameters
+ * Return: 0 if n = 0 or sum of parameters if succesful
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
 	va_list valist;
+	int sum = 0;
 	unsigned int i;
+
+	if (!n)
+		return (0);
 
 	va_start(valist, n);
 
 	for (i = 0; i < n; i++)
-	{
-		printf("%d", va_arg(valist, int));
-		if (separator && i != n - 1)
-			printf("%s", separator);
-	}
-	printf("\n");
+		sum += va_arg(valist, int);
 
 	va_end(valist);
+
+	return (sum);
 }
