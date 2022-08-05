@@ -6,20 +6,15 @@
  */
 void print_rev(char *s)
 {
-	int one, two, three;
-	char rev;
-	 
-	one = 0;
+	int length = *s;
+	int middle = length / 2;
+	int i;
+	char temp;
 
-	while (s[one] != '\0')
-		one++;
-
-	one--;
-	for (two = 0; two <= one / 2; two++)
+	for (i = 0; i < middle; i++)
 	{
-		rev = s(one);
-		three = s(one - two);
-		s(two) = three;
-		s(one - two) = rev;
+		temp = s[i];
+		s[i] = s[length - i - 1];
+		s[length - i - 1] = temp;
 	}
 }
