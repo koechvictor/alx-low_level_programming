@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - _prints Putchar
+ * main - prints _Putchar
  *
  * Description: prints _putchar
  *
