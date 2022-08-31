@@ -20,7 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 			break;
 			*luck = *src;
 			luck++;
-			n--;
+			n++;
 		}
 	return (dest);
 }
