@@ -6,10 +6,10 @@
  * Return: i if succesful
  */
 
-int _abs(int n)
+int _abs(int i)
 {
-	if (n < 0)
-	n *= -1;
+	if (i < 0)
+	i *= -1;
 
-	return (n);
+	return (i);
 }
