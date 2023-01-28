@@ -31,4 +31,16 @@ int bhelp(int *array, size_t size, int value, int acc)
 		return (bhelp(array, mid, value, acc));
 	return (bhelp(array + mid + 1, size - mid - 1, value, acc + mid + 1));
 }
-
+/**
+ * binary_search - function description
+ * @array: parameter description
+ * @size: parameter description
+ * @value: parameter description
+ * Return: return description
+ */
+int binary_search(int *array, size_t size, int value)
+{
+	if (!array)
+		return (-1);
+	return (bhelp(array, size, value, 0));
+}
