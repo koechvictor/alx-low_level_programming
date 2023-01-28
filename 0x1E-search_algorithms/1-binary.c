@@ -1,6 +1,27 @@
 #include "search_algos.h"
 
 /**
+ * my_print - print an array
+ * @array: parameter description
+ * @size: parameter description
+ */
+void my_print(int *array, size_t size)
+{
+	unsigned int i = 0;
+
+	if (!array)
+		return;
+	printf("Searching in array: ");
+	for (i = 0; i < size; i++)
+	{
+		if (i)
+			printf(", ");
+		printf("%d", array[i]);
+	}
+	printf("\n");
+}
+
+/**
  * bhelp - binary search recursive helper
  * @array: the array
  * @size: the size
@@ -31,6 +52,7 @@ int bhelp(int *array, size_t size, int value, int acc)
 		return (bhelp(array, mid, value, acc));
 	return (bhelp(array + mid + 1, size - mid - 1, value, acc + mid + 1));
 }
+
 /**
  * binary_search - function description
  * @array: parameter description
